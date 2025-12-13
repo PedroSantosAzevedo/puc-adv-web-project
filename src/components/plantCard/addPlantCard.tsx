@@ -1,5 +1,4 @@
-
-
+import "./plantCard.css";
 
 export default function AddPlantCard() {
   return (

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./plantCard.css";
 
 interface PlantCardProps {
   title: string;
