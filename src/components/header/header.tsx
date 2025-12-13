@@ -1,3 +1,4 @@
+import "./header.css";
 
 interface MyHeaderProps {
   title: string;

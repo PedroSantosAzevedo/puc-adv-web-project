@@ -1,5 +1,5 @@
 import DefaultButton from "../../components/defaultButton/defaultButton";
-import MyHeader from "../header";
+import MyHeader from "../../components/header/header";
 import "./plantHome.css";
 import { useNavigate } from "react-router-dom";
 

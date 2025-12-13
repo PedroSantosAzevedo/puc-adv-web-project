@@ -1,5 +1,5 @@
 import './App.css'
-import MyHeader from './pages/header'
+import MyHeader from './components/header/header'
 import PlantCard from './components/plantCard/plantCard'
 import AddPlantCard from './components/plantCard/addPlantCard'
 import plantsData from './data/plants.json'
