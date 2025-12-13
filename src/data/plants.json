@@ -1,0 +1,40 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "title": "Monstera Deliciosa",
+      "image": "./src/assets/leaf.png",
+      "labels": ["Water Weekly", "Indirect Light", "Tropical"]
+    },
+    {
+      "id": 2,
+      "title": "Pothos",
+      "image": "./src/assets/leaf.png",
+      "labels": ["Water Every 2 Weeks", "Low to Bright Light", "Climbing"]
+    },
+    {
+      "id": 3,
+      "title": "Snake Plant",
+      "image": "./src/assets/leaf.png",
+      "labels": ["Water Monthly", "Low to Bright Light", "Drought Tolerant"]
+    },
+    {
+      "id": 4,
+      "title": "Rubber Plant",
+      "image": "./src/assets/leaf.png",
+      "labels": ["Water Weekly", "Bright Indirect Light", "Large Leaves"]
+    },
+    {
+      "id": 5,
+      "title": "Philodendron",
+      "image": "./src/assets/leaf.png",
+      "labels": ["Water Every 5-7 Days", "Indirect Light", "Climbing"]
+    },
+    {
+      "id": 6,
+      "title": "Spider Plant",
+      "image": "./src/assets/leaf.png",
+      "labels": ["Water Regularly", "Bright Light", "Easy Care"]
+    }
+  ]
+}

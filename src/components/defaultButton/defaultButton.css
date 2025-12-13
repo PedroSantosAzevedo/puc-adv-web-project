@@ -1,0 +1,27 @@
+.defaultButton {
+    background-repeat: no-repeat;
+    background-color: bisque;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height : 60px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .defaultButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+    cursor: pointer;
+  }
+}
+
+/* Shrink when clicked/pressed */
+.defaultButton:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

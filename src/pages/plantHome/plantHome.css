@@ -1,0 +1,16 @@
+.homeMainText {
+    font-size: 2rem;
+    color: rgb(216, 208, 208);
+    text-align: center;
+}
+
+.homeTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.homeMainText {
+    width: 80%;
+}

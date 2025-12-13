@@ -1,0 +1,36 @@
+import { useState } from "react";
+
+interface PlantCardProps {
+  title: string;
+  image: string;
+  labels: string[];
+  clickAction?: (title: string) => void;
+}
+
+export default function PlantCard({ title, image, labels, clickAction}: PlantCardProps) {
+
+    const [state, setState] = useState(false);
+    const [classState, setClassState] = useState("plant-card");
+
+    const handleClick = () => {
+        setState(!state);
+        state ? setClassState("plant-card") :  setClassState("plant-card plant-card-selected")
+        clickAction?.(title);
+    }
+
+  return (
+    <button className={classState} onClick={handleClick}>
+      <img src={image} alt={title} className="plant-card-image" />
+      <h3 className="plant-card-title">{title}</h3>
+      <div className="label-container">
+      <div className="plant-card-labels">
+        {labels.map((label, index) => (
+          <span key={index} className="plant-card-label">
+            {label}
+          </span>
+        ))}
+        </div>
+      </div>
+    </button>
+  );
+}
