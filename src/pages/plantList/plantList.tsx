@@ -3,8 +3,11 @@ import MyHeader from '../../components/header/header'
 import PlantCard from '../../components/plantCard/plantCard'
 import AddPlantCard from '../../components/plantCard/addPlantCard'
 import plantsData from '../../data/plants.json'
+import { useNavigate } from "react-router-dom";
 
 export default function PlantList() {
+
+    const navigate = useNavigate();
     return (
          <div>
               <MyHeader title="Minhas plantas" />
@@ -12,11 +15,11 @@ export default function PlantList() {
                 <div className="plants-container">
                   {plantsData.plants.map((plant) => (
                     <PlantCard
-                      key={plant.id}
+                      id={plant.id}
                       title={plant.title}
                       image={plant.image}
                       labels={plant.labels}
-                      clickAction={(myTitle) => console.log(myTitle)}
+                      clickAction={(id) => navigate(`/plantEdit/${id}`)}
                     />
                   ))}
                   <AddPlantCard />

@@ -2,13 +2,14 @@ import { useState } from "react";
 import "./plantCard.css";
 
 interface PlantCardProps {
+  id: number
   title: string;
   image: string;
   labels: string[];
-  clickAction?: (title: string) => void;
+  clickAction?: (id: number) => void;
 }
 
-export default function PlantCard({ title, image, labels, clickAction}: PlantCardProps) {
+export default function PlantCard({id, title, image, labels, clickAction}: PlantCardProps) {
 
     const [state, setState] = useState(false);
     const [classState, setClassState] = useState("plant-card");
@@ -16,7 +17,8 @@ export default function PlantCard({ title, image, labels, clickAction}: PlantCar
     const handleClick = () => {
         setState(!state);
         state ? setClassState("plant-card") :  setClassState("plant-card plant-card-selected")
-        clickAction?.(title);
+        console.log("clicou no card da planta " + id);
+        clickAction?.(id);
     }
 
   return (
