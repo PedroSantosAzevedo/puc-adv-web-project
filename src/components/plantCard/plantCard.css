@@ -73,3 +73,18 @@
   padding: 4px 8px;
   border-radius: 4px;
 }
+
+/* Shrink slightly on hover for hover-capable devices */
+@media (hover: hover) and (pointer: fine) {
+  .plant-card:hover, .add-plant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+    cursor: pointer;
+  }
+}
+
+/* Shrink when clicked/pressed */
+.plant-card:active, .add-plant-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
