@@ -8,7 +8,7 @@ interface DefaultButtonProps {
 export default function DefaultButton({ text, onClick }: DefaultButtonProps) {
   return (
     <button className="defaultButton" onClick={onClick}>
-      {text}
+      <span className="defaultButtonText">{text}</span>
     </button>
   );
 }
