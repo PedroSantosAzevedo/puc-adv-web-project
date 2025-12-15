@@ -1,6 +1,7 @@
 import "./plantEdit.css";
 import MyHeader from '../../components/header/header';
 import plantsData from '../../data/plants.json';
+import TextFieldGroup from "../../components/textField/textField";
 import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import DefaultButton from "../../components/defaultButton/defaultButton";
@@ -15,7 +16,7 @@ export default function PlantEdit() {
     const param = useParams();
     const plant = findPlantById(Number(param.id));
     const [title, setTitle] = useState(plant?.title || '');
-    const [labels, setLabels] = useState(plant?.labels);
+    const [labels, setLabels] = useState<string[]>(plant?.labels || []);
 
     const handleLabelChange = (index: number, value: string) => {
         if (!labels) return;
@@ -51,15 +52,13 @@ export default function PlantEdit() {
                         />
                     </div>
                     {labels.map((label, index) => (
-                        <div className="input-group">
-                            <label htmlFor="labels">Campo:</label>
-                            <input
-                                type="text"
-                                id="labels"
-                                value={label}
-                                onChange={(e) =>handleLabelChange(index, e.target.value)}
-                            />
-                        </div>
+                        <TextFieldGroup
+                            key={index}
+                            label={`Campo ${index + 1}`}
+                            id={`label-${index}`}
+                            value={label}
+                            onChange={(e) => handleLabelChange(index, e.target.value)}
+                        />
                     ))}
                 </form>
                 <DefaultButton text="Salvar" onClick={() => alert('Planta salva! (funcionalidade não implementada)')} />
