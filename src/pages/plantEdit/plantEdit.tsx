@@ -2,9 +2,10 @@ import "./plantEdit.css";
 import MyHeader from '../../components/header/header';
 import plantsData from '../../data/plants.json';
 import TextFieldGroup from "../../components/textField/textField";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import DefaultButton from "../../components/defaultButton/defaultButton";
+import { useNavigate } from "react-router-dom";
 
 
 function findPlantById(id: number) {
@@ -13,6 +14,7 @@ function findPlantById(id: number) {
 
 export default function PlantEdit() {
 
+    const navigate = useNavigate();
     const param = useParams();
     const plant = findPlantById(Number(param.id));
     const [title, setTitle] = useState(plant?.title || '');
@@ -26,14 +28,10 @@ export default function PlantEdit() {
     }
 
     if (!plant) {
-        return (
-            <div>
-                <MyHeader title="Editar Planta" />
-                <div className="plant-edit-content">
-                    <p>Planta não encontrada.</p>
-                </div>
-            </div>
-        );
+        useEffect(() => {
+            navigate("/plantNotFound");
+        }, []);
+        return null;
     }
 
     return (
