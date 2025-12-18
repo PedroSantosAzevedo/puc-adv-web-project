@@ -20,9 +20,9 @@ export default function PlantHome() {
       setTimeout(() => {
         setCurrentImage(prev => (prev + 1) % images.length);
         setFade(true);
-      }, 700);
+      }, 300);
       
-    }, 2000); 
+    }, 3600); 
 
     return () => clearInterval(interval);
   }, [images.length]);
