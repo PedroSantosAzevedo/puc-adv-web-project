@@ -4,13 +4,37 @@
     text-align: center;
 }
 
-.homeTextContainer {
+.contentContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-direction: column;
 }
+
+.home-img {
+    width: 20%;
+    height: width;
+    margin-right: 8px;
+    display: flex;
+}
+
 .homeMainText {
     width: 80%;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.home-img {
+    transition: opacity 0.3s ease-in-out;
+    width: 20%;
+    height: width;
+    margin-right: 8px;
+    display: flex;
 }
