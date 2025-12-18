@@ -99,7 +99,7 @@ O PlantCard é um componente React reutilizável que exibe um cartão interativo
 
 ## 📝 Componente TextFieldGroup 
 📋 Descrição
-O TextFieldGroup é um componente React reutilizável para entrada de dados em formulários, projetado especificamente para capturar características de plantas (como nome, espécie, tipo de solo, etc.).
+O TextFieldGroup é um componente reutilizável para entrada de dados em formulários, projetado especificamente para capturar características de plantas (como nome, espécie, tipo de solo, etc.).
 
 🎯 Características Principais
 ✅ Componente Controlado - Segue o padrão de componentes controlados do React
@@ -114,7 +114,7 @@ O TextFieldGroup é um componente React reutilizável para entrada de dados em f
 
 ## 🔘 Componente DefaultButton 
 📋 Descrição
-O DefaultButton é um componente React minimalista e altamente reutilizável que encapsula a funcionalidade básica de um botão em uma interface. Projetado com foco em simplicidade e consistência, este componente serve como bloco de construção fundamental para ações de usuário em toda a aplicação.
+O DefaultButton é um componente que encapsula a funcionalidade básica de um botão em uma interface. Projetado com foco em simplicidade e consistência, este componente serve como bloco de construção fundamental para ações de usuário em toda a aplicação.
 
  🎯 Características Principais
 ✅ Simplicidade Intencional - Interface limpa com apenas props essenciais
@@ -130,7 +130,7 @@ O DefaultButton é um componente React minimalista e altamente reutilizável que
 
 ## 🏷️ Componente MyHeader
 📋 Descrição
-O MyHeader é um componente React inteligente e navegável que serve como cabeçalho principal da aplicação. Este componente demonstra integração avançada com React Router e lógica condicional de navegação, proporcionando uma experiência de usuário fluida e contextual. Ideal para aplicações que necessitam de navegação inteligente entre diferentes fluxos.
+O MyHeader é um componente  navegável que serve como cabeçalho principal da aplicação. Este componente demonstra integração avançada com React Router e lógica condicional de navegação, proporcionando uma experiência de usuário fluida e contextual. Ideal para aplicações que necessitam de navegação inteligente entre diferentes fluxos.
 
 🎯 Características Principais
 ✅ Navegação Inteligente - Lógica condicional baseada na localização atual
@@ -140,5 +140,21 @@ O MyHeader é um componente React inteligente e navegável que serve como cabeç
 ✅ Ações Contextuais - Botão de ação no header para funcionalidades globais
 
 ✅ Reutilizável em Toda App - Pode ser usado em qualquer página/routing
+
+##🌿 Componente PlantCard - Cartão Interativo de Planta
+📋 Descrição
+O PlantCard é um componente reutilizável que exibe informações sobre plantas . Este componente implementa seleção toggle com feedback visual imediato, sendo ideal para listagens e galerias e seleção diverso itens.
+
+🎯 Características Principais
+
+✅ Feedback Visual Imediato - Mudança de classes CSS para indicar estado
+
+✅ Callback de Ação - Executa função personalizada ao clicar, recebendo o ID da planta
+
+✅ Tags Dinâmicas - Exibe múltiplas etiquetas/labels como badges informativos
+
+✅ Totalmente Tipado - Props definidas com TypeScript para segurança e autocomplete
+
+✅ Reutilizavel - Recebe parametros para configuração do componente
 
 
