@@ -41,15 +41,7 @@ yarn install
 ### OU usando pnpm
 pnpm install
 
-## Passo 3: Configure as Variáveis de Ambiente
-
-### Copie o arquivo de exemplo
-cp .env.example .env.local
-
-### Edite o arquivo .env.local com suas configurações
-### Você pode usar um editor de texto como VSCode, Nano ou Vim
-
-## Passo 4: Inicie o Servidor de Desenvolvimento
+## Passo 3: Inicie o Servidor de Desenvolvimento
 
 ### Usando npm
 npm run dev
@@ -60,7 +52,7 @@ yarn dev
 ### OU usando pnpm
 pnpm dev
 
-## Passo 5: Acesse a Aplicação
+## Passo 4: Acesse a Aplicação
 Abra seu navegador
 
 Acesse: http://localhost:5173
