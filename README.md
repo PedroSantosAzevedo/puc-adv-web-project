@@ -24,14 +24,14 @@ npm, yarn ou pnpm
 
 # 🚀 Guia Passo a Passo
 ## Passo 1: Clone o Repositório
-bash
+
 ### Clone o repositório
 git clone <url-do-repositorio>
 
 ### Entre na pasta do projeto
 cd <nome-da-pasta>
 ## Passo 2: Instale as Dependências
-bash
+
 ### Usando npm
 npm install
 
@@ -42,14 +42,15 @@ yarn install
 pnpm install
 
 ## Passo 3: Configure as Variáveis de Ambiente
-bash
-## Copie o arquivo de exemplo
+
+### Copie o arquivo de exemplo
 cp .env.example .env.local
 
 ### Edite o arquivo .env.local com suas configurações
 ### Você pode usar um editor de texto como VSCode, Nano ou Vim
+
 ## Passo 4: Inicie o Servidor de Desenvolvimento
-bash
+
 ### Usando npm
 npm run dev
 
@@ -58,6 +59,7 @@ yarn dev
 
 ### OU usando pnpm
 pnpm dev
+
 ## Passo 5: Acesse a Aplicação
 Abra seu navegador
 
